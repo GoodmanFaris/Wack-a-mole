@@ -1,0 +1,201 @@
+main_body{
+	background-image: linear-gradient(#a8a8a8, #6b6b6b);
+}
+
+#glavni_naslov{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 10%;
+}
+
+#glavni_naslov h1{
+	font-size: 80px;
+	color: lightgrey;
+}
+
+#glavni_naslov #p{
+	color: #25313f;
+	font-size: 100px;
+}
+
+.Naslovi{
+	font-size: 100px;
+	color: #25313f;
+}
+
+.Tekst{
+	font-size: 30px;
+}
+
+.SlikeUpute{
+	height: 20%;
+}
+
+.MeniUpute{
+	 margin-top: 20px;
+}
+
+.MeniUpute img{
+	 width: 80%;
+}
+
+.OProjektu{
+	background-color: gray;
+}
+
+.ListaOProjektu{
+	background-color: lightgrey;
+}
+
+.DugmeNazad{
+	height: 6%;
+	width: 10%;
+	font-size: 70px;
+	position: fixed;
+	top: 15px;
+	left: 10px;
+}
+
+#glavni_naslov #m{
+	color: #12a9e2;
+	font-size: 100px;
+
+}
+
+#glavni_naslov #f{
+	color: white;
+	font-size: 100px;
+}
+
+#podnaslov{
+	margin-left: 55%;
+}
+
+.opcije{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.dugme{
+	margin-top: 30px;
+	width: 300px;
+	background-color:#25313f;;
+}
+
+.dugme p{
+	font-size: 30px;
+}
+
+
+
+#Tabla{
+	border: 2px #25313f solid;
+	background-color: gray;
+}
+
+.OdabirDugme{
+	border: 1px #25313f solid;
+	margin-left: 20px;
+	margin-bottom: 40px;
+}
+
+.Main{
+	border-radius: 40px;
+	background-color: #949497;
+	text-align: center;
+	width: 60px;
+}
+
+.MrezaItem{
+	align-content: center;
+	justify-content: center;
+}
+
+.MI4{
+	height: 150px;
+}
+
+.MI5{
+	height: 140px;
+}
+
+.MI6{
+	height: 130px;
+}
+
+.MIT{
+	height: 140px;
+	width: 140px;
+}
+
+
+#Score{
+	font-size: 100px;
+	margin-top: 0;
+}
+
+#timerDisplay{
+	font-size: 100px;
+	text-align: center;
+}
+
+.HoleT{
+	height: 90%;
+	width: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	text-align: center;
+	border-radius: 50px;
+	background-color: #25313f;
+}
+
+.Hole{
+	height: 90%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	text-align: center;
+	border-radius: 50px;
+	background-color: #25313f;
+}
+
+.Kraj{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: gray;
+	display: none;
+	text-align: center;
+	align-content: center;
+}
+
+.Kraj h1{
+	font-size: 120px;
+}
+
+.Kraj h3{
+	font-size: 100px;
+}
+
+.Kraj a{
+	font-size: 40px;
+	background-color: green;
+}
+
+.SlikaIspit{
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SlikaIspitV{
+	height: 100%;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}

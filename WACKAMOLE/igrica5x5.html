@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5x5</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id ="body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h2 style="display: inline-block;">    Vrijeme:   </h2>
+                        <h2 id="timerDisplay" style="display: inline-block;">30</h2>
+                        
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col-3">
+                        <h2 style="display: inline-block;">Score: </h2>
+                        <h2 id="Score" style="display: inline-block;">0</h2>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    <div class="container Main">
+
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole1 Hole" id = "Hole1">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole2 Hole" id = "Hole2">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole3 Hole" id = "Hole3">
+ 
+            </div></div>
+                <div class="col MrezaItem MI5"><div class="Hole4 Hole" id = "Hole4">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole4 Hole" id = "Hole4">
+ 
+            </div></div>
+        </div>
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole5 Hole" id = "Hole5">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole6 Hole" id="Hole6">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole7 Hole" id="Hole7">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole8 Hole" id="Hole8">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole7 Hole" id="Hole7">
+
+            </div></div>
+        </div>
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole9  Hole" id="Hole9">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole10 Hole" id="Hole10">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole11 Hole" id="Hole11">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole12 Hole" id="Hole12">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole11 Hole" id="Hole11">
+
+            </div></div>
+        </div>
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole13 Hole" id = "Hole13">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole14 Hole" id = "Hole14">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole16 Hole" id = "Hole16">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+        </div>
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole13 Hole" id = "Hole13">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole14 Hole" id = "Hole14">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole16 Hole" id = "Hole16">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+        </div>
+        <div class="row row-cols-10">
+            <div class="col MrezaItem MI5"><div class="Hole13 Hole" id = "Hole13">
+ 
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole14 Hole" id = "Hole14">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole16 Hole" id = "Hole16">
+
+            </div></div>
+            <div class="col MrezaItem MI5"><div class="Hole15 Hole" id = "Hole15">
+
+            </div></div>
+        </div>
+    </div>
+    <div style="height: 500px;"></div>
+    <div class="Kraj" id="Kraj">
+        <h1>KRAJ</h1>
+        <h4>Rezultat: </h4>
+        <h3 id="Rezultat"></h3>
+        <br>
+        <a class="btn btn-success mt-5" href="igrica5x5.html">Ponovo</a>
+        <a class="btn btn-primary mt-5" href="index.html">Pocetna</a>
+    </div>
+
+    <script type="text/javascript">
+
+         document.getElementById("body").style.backgroundColor = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.3)`;
+
+        let timer = 30; 
+        const timerDisplay = document.getElementById('timerDisplay');
+        let tezina = (120 - localStorage.getItem('difficulty')) / 2.5;
+        let counter = 0;
+        let Score = 0;
+        let bonusi = 0;
+
+
+        while (true) {
+        let randomTime = Math.floor(Math.random() * timer * tezina * 1000); 
+        let randomDissapearTime = Math.floor(Math.random() * (1500 - 500 +1 )) + 500;
+        let randHoleNbr = Math.floor(Math.random() * 16)+1;
+        let randHole = document.getElementById("Hole"+randHoleNbr);
+        let randImgType = Math.floor(Math.random() * 3)+1;
+
+        const charArray = ['T', 'Z', 'P', 'L', 'K', 'B', 'V'];
+        const randomIndex = Math.floor(Math.random() * charArray.length);
+            setTimeout(function () {
+            if(randHole.innerHTML.trim() === ''){
+            let kliknuto = false;
+            randHole.innerHTML = `<img src="ispit${charArray[randomIndex]}.jpg" class="SlikaIspit" onclick="Sakrij(${randHoleNbr}, '${charArray[randomIndex]}');">`;
+            setTimeout(function () {
+                if (!kliknuto && (charArray[randomIndex] === 'T' || charArray[randomIndex] === 'Z' || charArray[randomIndex] === 'P')) {
+                    Score -= 5; 
+                    document.getElementById("Score").innerHTML = Score;
+                }
+                randHole.innerHTML = '';
+            }, randomDissapearTime);
+        }
+        }, randomTime);
+        
+        counter += 1;
+        if (counter == 1000) {
+            break;
+        }
+
+}
+
+        const interval = setInterval(() => {
+            timerDisplay.innerHTML = timer;
+            if (timer === 0) {
+                clearInterval(interval);
+                Kraj();
+            } else {
+                timer--;
+            }
+        }, 1000);
+
+        function Kraj() {
+            document.getElementById("Kraj").style.display = "block";
+            document.getElementById("Rezultat").innerHTML = Score;
+            console.log(Score)
+            
+        }
+
+        function Sakrij(i, j){
+            console.log("Hole"+i);
+            document.getElementById("Hole"+i).innerHTML = '';
+            const fail = new Audio('fail.mp3');
+            const correct = new Audio('correct.mp3');
+            const bonus = new Audio('success.mp3');
+
+            if(j == "T"){
+                Score+=5
+                Score+=5
+                correct.play();
+
+            }
+            if(j == "Z"){
+                Score+=20
+                Score+=5
+                correct.play();
+
+            }
+            if(j == "P"){
+                Score+=10
+                Score+=5
+                correct.play();
+
+            }
+            if(j == "L"){
+                Score-=30
+                document.getElementById("Score").innerHTML = Score;
+                fail.play();
+            }
+            if(j == "K"){
+                if(Score>0){
+                    Score=0
+                    document.getElementById("Score").innerHTML = Score;
+                    }
+                    fail.play();
+            }
+            if(j == "B"){
+                Score+=50;
+                bonus.play();
+            }
+            if(j == "T"){
+                timer+=5
+                bonus.play();
+            }
+        }
+    </script>s
+</body>
+</html>
